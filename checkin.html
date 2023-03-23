@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body aria-readonly="false" style="background:#eeeeee;"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"></body>
+</html>
+<title>Booking confirmation</title>
+<style type="text/css">* {
+		  box-sizing: border-box;
+		}
+		
+		/* Create two equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 50%;
+		  padding: 10px;
+		}
+		
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+</style>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td bgcolor="#eeeeee">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:800px;" width="100%">
+				<tbody>
+					<tr>
+						<td bgcolor="#eeeeee" height="30">&nbsp;</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" height="20">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="#ffffff"><span style="font-family:Times New Roman,Times,serif;">{companies.logo}</span></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" height="40" style="text-align: center;">
+						<h1><span style="color:#ffffff;"><span style="font-family:Georgia,serif;"><span style="font-size:26px; color:#b3a581;">Welcome, {reservations.first_name} {reservations.last_name}</span></span></span></h1>
+						<span style="font-family:Georgia,serif;"><span style="font-size:18px;"><span style="color:#b3a581;">We are excited to host you! Here are the details for your upcoming stay.&nbsp;</span><br />
+						<br />
+						{homes.default_image}</span></span></td>
+					</tr>
+					<tr>
+						<td bgcolor="#b3a581" valign="top">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td bgcolor="#eeeeee"><span style="font-family:Times New Roman,Times,serif;"><!--[if gte mso 10]>
+</td></tr>
+</table>
+<![endif]--></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td bgcolor="#eeeeee">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:800px;" width="100%">
+				<tbody>
+					<tr>
+						<td bgcolor="#b3a581" valign="top"><span style="font-family:Times New Roman,Times,serif;"><!--Content--></span>
+
+						<div class="row">&nbsp;</div>
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="86%">
+							<tbody>
+								<tr>
+									<td bgcolor="#b3a581" colspan="2" open="" sans="" style="text-align: center;"><strong><span style="color:#ffffff;"><span style="font-family:Georgia,serif;"><span style="font-size:28px;">Check-In Instructions</span></span></span></strong></td>
+								</tr>
+								<tr>
+									<td bgcolor="#eeeeee" style="background:#b3a581;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td align="left" style="font-family: 'Open Sans', sans-serif; font-size:18px; font-weight:300; line-height:26px; color:#333333; padding:30px; text-align:left;">
+												<table bgcolor="#dddddd" border="0" cellpadding="0" cellspacing="1" style="background:#dddddd;" width="100%">
+													<tbody>
+														<tr style="background:#b3a581;">
+															<td align="left" style="font-family: 'Open Sans', sans-serif; font-size:14px; font-weight:300; line-height:20px; color:#333333; padding:10px; background:#ffffff; text-align:left;" valign="top"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">Property Name</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#ffffff; padding:10px; " valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">{reservations.unit_name}</span></span></span></td>
+														</tr>
+														<tr>
+															<td style="background:#f7f7f7;color:#555555;font-family:sans-serif;font-size:14px;font-weight:300;line-height:18px;padding:10px;" valign="top"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">Confirmation #</span></span></span></strong></td>
+															<td style="background:#f7f7f7;color:#555555;font-family:sans-serif;font-size:14px;font-weight:300;line-height:18px;padding:10px;" valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">{reservations.id}</span></span></span></td>
+														</tr>
+														<tr style="background:#ffffff;">
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#ffffff; padding:10px;" valign="top" width="40%"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">Guest Name</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#ffffff; padding:10px; " valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">{reservations.first_name} {reservations.last_name}</span></span></span></td>
+														</tr>
+														<tr style="background:#f7f7f7;">
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#f7f7f7; padding:10px; " valign="top"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">Email Address</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#f7f7f7; padding:10px; " valign="top"><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><a href="mailto:{reservations.email}" style="color:#0066cc;"><span style="color:#000000;">{reservations.email}</span></a></span></span></td>
+														</tr>
+														<tr style="background:#f7f7f7">
+															<td style="background:#f7f7f7; line-height:18px; padding:10px" valign="top" width="40%"><span style="font-size:18px"><span style="font-family:'Open Sans', sans-serif"><span style="font-weight:300"><span style="color:#333333"><span style="font-size:14px"><span style="font-family:sans-serif"><span style="color:#555555"><span style="font-weight:300"><span style="font-size:14px"><span style="font-family:Georgia,serif"><span style="color:#ad966c"><strong>Directions</strong><br />
+															<br />
+															(<em>Please use</em>&nbsp;<strong>Guard Gate</strong> <em>entrance on first arrival; only use Back Gate after receiving a vehicle pass from Guard Gate</em>)</span></span></span></span></span></span></span></span></span></span></span></td>
+															<td style="background:#f7f7f7; line-height:18px; padding:10px" valign="top"><span style="font-size:12px;"><span style="font-family:'Open Sans', sans-serif"><span style="font-weight:300"><span style="color:#333333"><span style="font-family:sans-serif"><span style="color:#555555"><span style="font-weight:300"><span style="color:#000000"><span style="font-family:Georgia,serif">To Check-In, you <strong>MUST</strong> first receive a Guest Pass from the Security Guardhouse located at 4700 Windermere Rd, Kissimmee,<br />
+															FL 34746.<br />
+															<img alt="" height="122" src="https://web.streamlinevrs.com/pmt_common/files/2195/images/guardhousesl.jpg" style="float:left;  " width="250" /><br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<u><strong>Guard Gate near Resort entrance (open 24/7):</strong></u><br />
+															- Navigate to 4700 Windermere Ave, Kissimmee, FL 34746</span></span></span></span></span></span></span></span></span>
+															<p style="margin:0in 0in 8pt"><span style="font-size:12px;"><span style="font-family:Georgia,serif;"><span style="line-height:107%">- From Guard Gate, turn right onto <strong><i>Storey Lake Blvd</i></strong><br />
+															- After 0.5 miles on <em>Storey Lake Blvd</em>, enter the circle drive<br />
+															- Take 3rd Exit on circle drive towards <strong><i>Natures Ridge Dr</i></strong><br />
+															- After 0.6 miles on <em>Natures Ridge Dr</em>, turn right on&nbsp;<strong><i>Storey Cove Ave</i></strong><br />
+															- Present your Gate Pass to the guard at <em>Storey Cove Ave</em><br />
+															-&nbsp;Continue on <em>Storey Cove Ave&nbsp;</em>past Gate<br />
+															- Make first LEFT on <em><b>Bookmark&nbsp;Dr</b></em><br />
+															- House is on the Left<br />
+															<br />
+															<strong><u>Check-In BEFORE 7PM:</u></strong><br />
+															<strong><i>Please</i></strong><em> </em><strong><i>use Google Maps to navigate</i></strong><em>&nbsp;</em><strong><i>directly to the Property Address below</i></strong><em>. If your GPS does not navigate directly to the Property Address, please use the directions below:</em><br />
+															- Navigate to&nbsp;<strong><i>Target</i></strong> at 4795 W Irlo Bronson Memorial Hwy, Kissimmee, FL 34746<br />
+															- Turn Left on to <em><b>Target Blvd</b></em><br />
+															- After 0.5 mi on <em>Target Blvd</em>, turn LEFT at <strong><i>Bookmark Dr</i></strong><br />
+															(DO NOT MAKE FIRST RIGHT ON BOOKMARK, or you&#39;ll make a gigantic loop)<br />
+															- House is on the LEFT<br />
+															<em>*The entrance by Target is CLOSED from 7pm - 6am daily</em></span></span></span></p>
+															</td>
+														</tr>
+														<tr style="background:#f7f7f7;">
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#f7f7f7; padding:10px; " valign="top" width="40%"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">Arrival Date/Time</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#f7f7f7; padding:10px; " valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">{reservations.startdate},&nbsp;{reservations.unit_check_in_time}</span></span></span></td>
+														</tr>
+														<tr style="background:#ffffff;">
+															<td align="left" style="font-family: 'Open Sans', sans-serif; font-size:14px; font-weight:300; line-height:20px; color:#333333; padding:10px; background:#ffffff; text-align:left;" valign="top" width="40%"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">Departure Date/Time</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#ffffff; padding:10px;" valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">{reservations.enddate},&nbsp;{reservations.unit_check_out_time}</span></span></span></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table bgcolor="#dddddd" border="0" cellpadding="0" cellspacing="1" style="background:#dddddd;" width="100%">
+													<tbody>
+														<tr style="background:#f7f7f7;">
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#f7f7f7; padding:10px; " valign="top"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">Property Address</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#f7f7f7; padding:10px; " valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">{reservations.location_address}<br />
+															{reservations.location_city},&nbsp;{reservations.location_state_name}<br />
+															{reservations.location_zip}</span></span></span></td>
+														</tr>
+														<tr style="background:#f7f7f7;">
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#ffffff; padding:10px; " valign="top"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">Door Code</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#ffffff; padding:10px; " valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">Enter Code Here ✔️</span></span></span></td>
+														</tr>
+														<tr style="background:#f7f7f7;">
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#f7f7f7; padding:10px; " valign="top" width="40%"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">WiFi Network</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#f7f7f7; padding:10px; " valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">{other_info.wifi_network_name}</span></span></span></td>
+														</tr>
+														<tr style="background:#ffffff;">
+															<td align="left" style="font-family: 'Open Sans', sans-serif; font-size:14px; font-weight:300; line-height:20px; color:#333333; padding:10px; background:#ffffff; text-align:left;" valign="top" width="40%"><strong><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;">WiFi Password</span></span></span></strong></td>
+															<td style="font-family:sans-serif; color:#555555; font-size:14px; line-height:18px; font-weight:300; background:#ffffff; padding:10px;" valign="top"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">{wifi_security_key}</span></span></span></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#f9f9f9" style="background:#f9f9f9;">
+									<table border="0" bordercolor="#ccc" cellpadding="5" cellspacing="0" style="border-collapse:collapse;" width="100%">
+										<tbody>
+											<tr>
+												<td bgcolor="#b3a581" colspan="2" open="" sans="" style="text-align: center;"><strong><span style="color:#ffffff;"><span style="font-family:Georgia,serif;"><span style="font-size:28px;">Home Information and Instructions</span></span></span></strong><br /><br />
+												&nbsp;</td>
+											</tr>
+											<tr>
+												<td align="left" style="line-height: 20px; padding: 30px; text-align: left;">
+												<div class="column" style="">
+												<p open="" sans="" style="color: rgb(51, 51, 51); font-weight: 300;"><span style="color:#b3a581;"><span style="font-family:Georgia,serif;"><strong new="" roman="" style="color: rgb(173, 150, 108); font-family: " times="">QUESTIONS &amp; ASSISTANCE DURING YOUR STAY</strong></span></span></p>
+
+												<div style="color: rgb(51, 51, 51); text-align: justify;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">Our Team Member, Lilia, will be your point of contact during your stay and can be reached at <strong>407-760-1086</strong>.<br />
+												If you call, please leave a message if there is no answer. You should receive a return call within an hour or less.&nbsp;<br />
+												We are a full-service rental company and want to make sure you are as happy as possible with your vacation. If you experience any issues at all during your stay, please call us!</span></span></div>
+
+												<p style="color: rgb(51, 51, 51);"><span style="font-family:Georgia,serif;"><strong><span style="color:#ad966c;">HOUSE RULES</span></strong></span></p>
+
+												<div style="text-align: justify;"><span style="color: rgb(51, 51, 51); font-size: 14px;"><span style="font-family:Georgia,serif;">- Events are strictly forbidden.&nbsp;<br />
+												<br />
+												-&nbsp;No smoking anywhere on the premises.&nbsp;<br />
+												<strong>Violation will result in immediate eviction&nbsp;and $2500 fine.&nbsp;</strong><br />
+												<br />
+												- Pool towels are the property asset, please remember not to leave our pool towels at the clubhouse pool.&nbsp;<br />
+												<strong>Missing pool towels will result in a charge of $30 per towel.&nbsp;</strong></span></span><br />
+												&nbsp;</div>
+
+												<div style="color: rgb(51, 51, 51); text-align: justify;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">- Please submit requests for early arrival/late departure prior to&nbsp;your arrival/departure.<br />
+												<span style="color:#ad966c;"><strong>Please adhere strictly to the checkout time as we may have guests checking&nbsp;in the day you&nbsp;check&nbsp;out.&nbsp;</strong></span><br />
+												Check&nbsp;in&nbsp;time&nbsp;is&nbsp;<strong>{reservations.unit_check_in_time}</strong>, check&nbsp;out&nbsp;is&nbsp;at&nbsp;<strong>{reservations.unit_check_out_time}</strong>.&nbsp;</span></span></div>
+
+												<div style="text-align: justify;">&nbsp;</div>
+
+												<div style="text-align: justify;"><span style="color: rgb(51, 51, 51); font-size: 14px;"><span style="font-family:Georgia,serif;">- </span></span><span style="font-size: 14px;"><span style="font-family: Georgia, serif;"><font color="#333333">Please BAG all trash and recyclables and put them in the plastic bin on the front porch. Any trash that is not bagged will not be picked up by the trash company and may result in extra fee. Valet trash pickup is every day and only for bagged trash.&nbsp;</font></span></span></div>
+												<br />
+												<span style="color: rgb(51, 51, 51); font-family: Georgia, serif;"><strong><span style="color:#ad966c;">OTHER CONTACT INFORMATION</span></strong></span><br />
+												&nbsp;
+												<div style="text-align: justify;"><span style="font-size:14px;"><span style="color: rgb(51, 51, 51);"><span style="font-family:Georgia,serif;"><span style="color:#ad966c;"><u><strong>Hideaway Club (Clubhouse)</strong></u><strong>:</strong></span><br />
+												<span style="color:#ad966c;">- Tel:</span>&nbsp;(407) 787-8700<br />
+												<span style="color:#ad966c;">- Address:</span> 4715 Kings Castle Cir, Kissimmee, FL 34746<br />
+												<span style="color:#ad966c;"><u><strong>Storey Lake Guardhouse</strong></u><strong>:</strong></span><br />
+												<span style="color:#ad966c;">- Tel:</span>&nbsp;(407) 572-8120<br />
+												<span style="color:#ad966c;">- Address:</span> 4700 Windermere Rd, Kissimmee, FL 34746<br />
+												<span style="color:#ad966c;"><u><strong>Osceola County Sheriff</strong></u><strong>:</strong></span> (407) 348-2222<br />
+												<span style="color:#ad966c;"><u><strong>Emergencies</strong></u><strong>:</strong></span> Call 9-1-1</span></span></span></div>
+												</div>
+
+												<div class="column" style="color: rgb(51, 51, 51);">
+												<p open="" sans="" style="font-weight: 300;"><span style="font-family:Georgia,serif;"><strong><span style="color:#ad966c;">THEATER/TVS</span></strong></span></p>
+
+												<div open="" sans="" style="font-weight: 300; text-align: justify;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">There are a lot of TVs/remotes in the house, but the TV in the home theater has the most moving&nbsp;parts. The home theater has a cable box, BluRay player, and XBox controlled by the receiver, a big black box in the console underneath the screen called a receiver.<span style="color:#ad966c;"><img alt="" height="200" src="https://web.streamlinevrs.com/pmt_common/files/2195/images/hometheater.jpeg" style="float: left;  " width="300" /></span></span></span></div>
+
+												<h3 open="" sans="" style="font-weight: 300;"><br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												&nbsp;</h3>
+
+												<h3 open="" sans="" style="font-weight: 300; text-align: justify;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">To use the device of choice:</span></span></h3>
+
+												<div open="" sans="" style="font-weight: 300; text-align: justify;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">1. The receiver must be on and set to the right input&nbsp;<br />
+												2. The projector must be on<br />
+												3. The device you want to be used must be on.<br />
+												<br />
+												To turn on any device, just match the brand of the remote to the brand of the device. For receiver inputs:</span></span></div>
+
+												<h3 open="" sans="" style="font-weight: 300;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">SAT/CATV = Cable TV&nbsp;<br />
+												BD/DVD = BluRay<br />
+												GAME = XBox</span></span></h3>
+												<span style="font-family:Georgia,serif;"><strong><span style="color:#ad966c;">RESORT AMENITIES&nbsp;</span></strong></span><br />
+												&nbsp;
+												<div style="text-align: justify;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">You will have access to the Storey Lake Resort&#39;s amenities. These include:&nbsp;<br />
+												- Water Park<br />
+												- Community Pool<br />
+												- Gym<br />
+												- Dining<br />
+												- Activities&nbsp;<br />
+												- Mini Golf (fee applies)<br />
+												- Kayak Rental (fee applies)</span></span><br />
+												<br />
+												<span style="color: rgb(51, 51, 51); font-family: Georgia, serif;"><strong><span style="color:#ad966c;">COURTESY OF OUR HOMES </span></strong></span></div>
+
+												<div style="text-align: justify;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;">Upon your arrival, you will find a complementary starter pack of the following items<br />
+												&bull; 1&nbsp;kitchen roll (paper towel roll)<br />
+												&bull; 6&nbsp;kitchen trash bag<br />
+												&bull; 4 dishwasher tabs<br />
+												&bull; 1 small bottle of dish soap<br />
+												&bull; 4&nbsp;single load/ laundry detergent<br />
+												&bull; Coffee/ K-cup pods&nbsp;and accompaniments<br />
+												&bull; Each bathroom features travel sized luxury soap, shampoo, conditioner, body wash, body lotion as well as 2&nbsp;toilet paper rolls.<br />
+												<br />
+												If you do not receive the starter park we provide, please do not hesitating contacting us, our team member will bring them to you.&nbsp;</span></span></div>
+												</div>
+
+												<h2 style="color: rgb(51, 51, 51); text-align: center;"><br />
+												<br />
+												<br />
+												<br />
+												<br />
+												&nbsp;</h2>
+
+												<div style="color: rgb(51, 51, 51); text-align: center;"><br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												&nbsp;</div>
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#b3a581" colspan="2" open="" sans="" style="text-align: center;">
+												<p><strong><span style="color:#ffffff;"><span style="font-family:Georgia,serif;"><span style="font-size:28px;">Rental Items</span></span></span></strong></p>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="line-height:20px;padding:30px;text-align:left;">
+												<div style="text-align: center;">
+												<div style="text-align: left;"><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color: rgb(51, 51, 51);">Please let us know if you would like&nbsp;us to order any of the following items for you. We recommend placing the order at least 2 days before arrival to ensure timely delivery.&nbsp;</span></span></span><br />
+												&nbsp;</div>
+												<span style="font-family:Times New Roman,Times,serif;"><span style="color:#b3a581;"><img alt="" height="200" src="https://web.streamlinevrs.com/pmt_common/files/2195/images/grill-food-1558622694.jpg" style="float: right;  " width="300" /></span></span>
+
+												<div style="text-align: left;"><span style="color:#b3a581;"><strong><span style="font-family:Georgia,serif;"><span style="font-size:14px;">BBQ Grill Rental</span></span></strong></span><br />
+												&nbsp;</div>
+
+												<div style="text-align: left;"><span style="font-family:Georgia,serif;"><span style="font-size:14px;"><font color="#333333">2-Burner&nbsp;Grill:$75/week&nbsp;+ 13.5% tax</font><br />
+												<br />
+												<font color="#333333">3-Burner&nbsp;Grill: $85/week&nbsp;+ tax</font><br />
+												<br />
+												<font color="#333333">4-Burner&nbsp;Grill: $100/week&nbsp;+ tax</font></span></span></div>
+												<span style="font-size:20px;"><strong><font color="#333333">&nbsp;</font></strong></span><br />
+												<font color="#333333">&nbsp; &nbsp;</font><br />
+												<br />
+												<font color="#333333">&nbsp; &nbsp; &nbsp;</font><span style="color:#b3a581;"><img alt="" height="190" src="https://web.streamlinevrs.com/pmt_common/files/2195/images/heated-pool.jpg" style="float: left;  " width="300" /></span>
+
+												<div style="text-align: left;"><span style="font-family:Times New Roman,Times,serif;"><font color="#333333"><span style="font-size:18px;"><strong>&nbsp; &nbsp;</strong></span><strong>&nbsp;</strong></font></span><span style="font-size:14px;"><span style="font-family:Georgia,serif;"><span style="color:#b3a581;"><strong>Pool/Spa&nbsp;Heat</strong></span><br />
+												<br />
+												<font color="#333333">&nbsp; &nbsp; &nbsp;November 1st to April 30th:<br />
+												&nbsp; &nbsp; &nbsp;$40/night +&nbsp;13.5% tax</font><br />
+												<font color="#333333">&nbsp; &nbsp; &nbsp;<br />
+												&nbsp; &nbsp; &nbsp;May 1 - October 31:<br />
+												&nbsp; &nbsp; &nbsp;$27.50/night&nbsp;+ 13.5% tax</font></span></span></div>
+
+												<div style="color: rgb(51, 51, 51); text-align: left;"><span style="font-size:16px;"><span style="font-family:Times New Roman,Times,serif;">&nbsp; &nbsp;</span></span><br />
+												&nbsp;</div>
+
+												<div style="color: rgb(51, 51, 51);"><span style="font-family:Times New Roman,Times,serif;"><span style="color:#b3a581;"><img alt="" height="200" src="https://web.streamlinevrs.com/pmt_common/files/2195/images/crib-1_orig.jpg" style="float: right;  " width="300" /></span></span></div>
+
+												<div style="color: rgb(51, 51, 51); text-align: left;"><br />
+												<span style="color:#b3a581;"><strong><span style="font-family:Georgia,serif;"><span style="font-size:14px;">Baby Items</span></span></strong></span></div>
+
+												<div style="color: rgb(51, 51, 51); text-align: left;"><br />
+												<span style="font-family:Georgia,serif;"><span style="font-size:14px;">Pack-n-Play: $45/week&nbsp;+ 13.5% tax</span></span></div>
+
+												<div style="color: rgb(51, 51, 51); text-align: left;"><br />
+												<span style="font-family:Georgia,serif;"><span style="font-size:14px;">High Chair: $45/week&nbsp;+ tax<br />
+												<br />
+												Full-Size Crib: $85/week&nbsp;+ tax</span></span></div>
+
+												<div style="color: rgb(51, 51, 51); text-align: center;"><span style="font-family:Times New Roman,Times,serif;">&nbsp; &nbsp;</span><br />
+												&nbsp;</div>
+												</div>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" style="line-height: 20px; color: rgb(51, 51, 51); padding: 30px; text-align: left;">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" style="font-family:sans-serif; color:#555555; font-size:12px; line-height:14px; font-weight:300;" valign="top"><span style="font-family:Georgia,serif;"><span style="font-size:14px;"><strong>{companies.name}</strong><br />
+									{companies.address}<br />
+									{companies.city} {companies.state_name} {companies.zip}<br />
+									{companies.local_phone}<br />
+									{companies.contact_email}</span></span></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td bgcolor="#eeeeee">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:800px;" width="100%">
+				<tbody>
+					<tr>
+						<td bgcolor="#b3a581" valign="top"><span style="font-family:Times New Roman,Times,serif;"><!--End Content--></span></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" class="bg-color3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td bgcolor="#eeeeee" class="bg-color1" height="50">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>

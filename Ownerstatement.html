@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml%22%3E">
+<head>
+<style>
+#table-header {
+border-collapse: collapse;
+} 
+#table-header table td{
+padding:0;
+}
+#owner-name {
+font-weight: 700;
+}
+#owner-address { 
+}
+#company-logo {
+padding:0 15px 15px;
+text-align: right;
+}
+#company-logo img {
+height: auto !important;
+max-width: 290px !important;
+}
+#company-info {
+padding:0 15px 15px;
+border-left: 1px solid #ddd;
+}
+#company-billing-address {
+margin-bottom: 20px;
+}
+#document-title { 
+text-transform:uppercase;
+font-size: 24px;
+font-weight: 700;
+margin-bottom:10px;
+}
+[color-theme="1"] #document-title { 
+color: #497c93;
+}
+[color-theme="2"] #document-title { 
+color: #8ac125;
+}
+[color-theme="3"] #document-title { 
+color: #000000;
+}
+[color-theme="3"] #table-header td {
+    border: none;
+}
+[color-theme="4"] #document-title { 
+color: #15445A;
+}
+</style>
+</head>
+<body>
+<table id="table-header" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="40%" valign="top">
+  <div id="document-title">Owner Statement</div>
+        <div id="owner-name">{statement.owner_name}</div>
+        <div id="owner-address">{statement.owner_address}</div>
+</td>
+<!--end first column --> 
+
+<td width="35%" valign="top">
+         <div id="company-logo">{companies.logo}</div>
+
+</td> 
+ <!--end second column --> 
+     <td width="25%" valign="top">
+          <div id="company-info">
+  <div id="company-billing-address">{companies.billing_address}
+         </div>
+  <div id="company-contact-info">
+{companies.nationwide_phone}<br>
+  {companies.contact_email}<br>
+  {companies.website_url}
+</div>
+</div>
+       </td>
+      <!--end third column --> 
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

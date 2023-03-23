@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CC Payment Receipt</title>
+</head>
+<body aria-readonly="false" style="background:#ffffff;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td bgcolor="#eeeeee"><!--[if gte mso 10]>
+<table width="1280px" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="font-family:sans-serif; color:#555555; font-size:18px; line-height:24px; font-weight:300;">
+<![endif]-->
+			<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:800px;" width="100%">
+				<tbody>
+					<tr>
+						<td bgcolor="#eeeeee" height="30">&nbsp;</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" height="20">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="#ffffff"><span style="font-family:Arial,Helvetica,sans-serif;">{companies.logo | width=250 | height=250}</span></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" height="40">&nbsp;</td>
+					</tr>
+					<tr>
+						<td bgcolor="#b3a581" valign="top"><!--Content-->
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="86%">
+							<tbody>
+								<tr>
+									<td align="left" bgcolor="#ffffff" colspan="2" style="font-family:'Open Sans', sans-serif; font-size: 36px; text-transform: Capitalize;text-align: left; margin: 0 0 0 0; padding: 15px 30px; font-weight: 300; color: #333333; background:#ffffff;border-bottom-style:solid; border-bottom-width:1px; border-bottom-color:#eeeeee; border-top-style:solid; border-top-width:1px; border-top-color:#eeeeee;">Reservation Confirmation</td>
+								</tr>
+								<tr>
+									<td bgcolor="#eeeeee" style="background:#ffffff;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td align="left" style="font-family: 'Open Sans', sans-serif; font-size:18px; font-weight:300; line-height:26px; color:#333333; padding:30px; text-align:left;">{current_date}</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#f9f9f9" style="background:#f9f9f9;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td align="left" style="font-family: 'Open Sans', sans-serif; font-size:14px; font-weight:300; line-height:20px; color:#333333; padding:30px; text-align:left;">Dear {reservations.first_name} {reservations.last_name},<br />
+												Your reservation {reservations.id} is confirmed.&nbsp;<br />
+												You may make a payment(s) anytime by clicking our secured <a href="https://diamondvh.com/payment-login/">payment link</a> using your reservation ID {reservations.id} and zip code.<br />
+												&nbsp;{reservations.clean_folio}</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" style="color:#333333;font-family:'Open Sans',sans-serif;font-size:14px;font-weight:300;line-height:20px;padding:30px;text-align:left;">Thank you for booking your vacation rental with {companies.name} . We will be sending you more information regarding the property as it gets closer to your stay. Please do not hesitate to contact us if you have any questions.</td>
+								</tr>
+								<tr>
+									<td align="center" style="font-family:sans-serif; color:#555555; font-size:12px; line-height:14px; font-weight:300;" valign="top"><br />
+									<strong><span style="font-size:14px;">{companies.name}</span></strong><br />
+									<span style="font-size:14px;">{companies.address}<br />
+									{companies.city} {companies.state_name} {companies.zip}<br />
+									{companies.local_phone}<br />
+									{companies.contact_email}</span><br />
+									&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--End Content--></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" class="bg-color3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td bgcolor="#eeeeee" class="bg-color1" height="50">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--[if gte mso 10]>
+</td></tr>
+</table>
+<![endif]--></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
